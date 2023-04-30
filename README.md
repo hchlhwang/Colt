@@ -4,7 +4,7 @@ Code to enhance quality of life
 # Chat
 This uses ChatGPT and a speech-to-text (STT) model to enable conversations. The user can use a microphone as an input and the Colt will respond in text. The user is required to insert the OpenAI API key in "chatColt.py".
 
-![demo gif](./docs/chatTest.gif)
+![demo gif](./Chat/docs/chatTest.gif)
 
 ## Demo
 
