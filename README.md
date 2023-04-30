@@ -10,7 +10,6 @@ This uses ChatGPT and a speech-to-text (STT) model to enable conversations. The 
 
 ```
 python chatColt.py
-
 ```
 
 ## Setup
