@@ -1,7 +1,6 @@
 ## Chat
 This uses ChatGPT and a speech-to-text (STT) model to enable conversations. The user can use a microphone as an input and the Colt will respond in text. The user is required to insert the OpenAI API key in "chatColt.py".
 
-<!-- ![](/Chat/docs/chatTest.gif) -->
 [![Video](/https://youtu.be/WMRGuV9L2FA.jpg)](https://www.youtube.com/watch?v=https://youtu.be/WMRGuV9L2FA)
 
 
