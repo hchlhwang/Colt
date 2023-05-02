@@ -26,3 +26,8 @@ For Ubuntu users, if an error exists when installing pyaudio, install the "porta
 ```
 sudo apt install portaudio19-dev
 ```
+
+### Reference
+* https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions
+* https://github.com/oliverguhr/wav2vec2-live
+* https://www.geeksforgeeks.org/how-to-use-chatgpt-api-in-python/*

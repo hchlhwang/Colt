@@ -1,4 +1,3 @@
-import os
 import pyaudio
 import webrtcvad
 from wav2vec2_inference import Wave2Vec2Inference
@@ -43,7 +42,6 @@ class LiveWav2Vec2:
     def vad_process(device_name, asr_input_queue):
         vad = webrtcvad.Vad()
         vad.set_mode(1)
-
         audio = pyaudio.PyAudio()
         FORMAT = pyaudio.paInt16
         CHANNELS = 1
@@ -122,9 +120,10 @@ class LiveWav2Vec2:
         """returns the text, sample length and inference time in seconds."""
         return self.asr_output_queue.get()
 
+
 if __name__ == "__main__":
     
-
+    # STT Models 
     # asr = LiveWav2Vec2("oliverguhr/wav2vec2-large-xlsr-53-german-cv9")
     # asr = LiveWav2Vec2("jonatasgrosman/wav2vec2-large-xlsr-53-english")
     asr = LiveWav2Vec2("facebook/wav2vec2-large-960h-lv60-self")
@@ -137,9 +136,6 @@ if __name__ == "__main__":
             text, sample_length, inference_time, confidence = asr.get_last_text()
             # print(f"{sample_length:.3f}s\t{inference_time:.3f}s\t{confidence}\t{text}")
             print(f"\n[USER] : {text}")
-
-
-            # os.system('clear')
 
             if len(text) > 10:
                 # Chat GPT
